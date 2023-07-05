@@ -3,6 +3,7 @@ import "./style.css";
 import imageSrc from "../../img2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const FinancialTracker = () => {
   const [transactions, setTransactions] = useState([]);
@@ -40,7 +41,9 @@ const FinancialTracker = () => {
       <header className="header">
         <h1>FINTECH</h1>
         <div className="header-buttons">
-          <button className="header-button">Login</button>
+          <Link to="/login" className="header-button">
+            Login
+          </Link>
           <button className="header-button">Registro</button>
         </div>
       </header>
