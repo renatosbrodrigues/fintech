@@ -4,6 +4,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import FinancialTracker from "./components/financialTracker";
 import LoginForm from "./components/loginForm";
+import RegisterForm from "./components/registerForm";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginForm />,
+  },
+
+  {
+    path: "/register",
+    element: <RegisterForm />,
   },
 ]);
 

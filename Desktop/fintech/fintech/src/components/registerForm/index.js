@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-const LoginForm = () => {
+const RegisterForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Lógica de autenticação aqui
@@ -10,13 +10,13 @@ const LoginForm = () => {
 
   return (
     <div className="background-container">
-      <div className="login-form-container">
-        <form className="login-form" onSubmit={handleSubmit}>
-          <div className="login-form-header">
-            <Link to={"/"} className="login-form-button">
+      <div className="register-form-container">
+        <form className="register-form" onSubmit={handleSubmit}>
+          <div className="register-form-header">
+            <Link to={"/"} className="register-form-button">
               voltar
             </Link>
-            <h2>Login</h2>
+            <h2>Cadastro</h2>
           </div>
           <div className="input-div">
             <label htmlFor="email">Email:</label>
@@ -26,6 +26,11 @@ const LoginForm = () => {
             <label htmlFor="password">Senha:</label>
             <input type="password" id="password" name="password" required />
           </div>
+          <div className="input-div">
+            <label htmlFor="password">CPF:</label>
+            <input type="text" id="CPF" name="CPF" required />
+          </div>
+
           <button type="submit">Entrar</button>
         </form>
       </div>
@@ -33,4 +38,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default RegisterForm;

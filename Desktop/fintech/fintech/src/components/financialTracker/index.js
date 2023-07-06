@@ -44,7 +44,9 @@ const FinancialTracker = () => {
           <Link to="/login" className="header-button">
             Login
           </Link>
-          <button className="header-button">Registro</button>
+          <Link to="/register" className="header-button">
+            Registro
+          </Link>
         </div>
       </header>
       <div className="container">

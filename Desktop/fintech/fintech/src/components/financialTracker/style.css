@@ -49,10 +49,12 @@
   width: 80%;
   height: 40px;
   border-radius: 8px;
+  color: white;
 }
 
 .transaction-description {
   flex: 1;
+  margin: 8px;
 }
 
 .transaction-amount,
